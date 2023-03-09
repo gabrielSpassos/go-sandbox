@@ -1,2 +1,6 @@
-# go-sandbox
-:blue_book: Go Lang Sandbox
+# Go-Sandbox
+
+### Check if is installed and version
+```shell
+go version
+```
