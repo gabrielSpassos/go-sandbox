@@ -21,6 +21,11 @@ go mod init github.com/mymodule
 go run .
 ```
 
+### Build module
+```shell
+go build
+```
+
 ### Install packages
 - Look packages on [pkg.go.dev](https://pkg.go.dev/search?q=quote)
 
@@ -35,4 +40,17 @@ go mod edit -replace {location}/{moduleName}={fisicalLocation}
 
 ex:
 go mod edit -replace example.com/greetings=../greetings
+```
+
+### Tests
+1. Create test file that end with `_test.go`
+2. Create test functions that start with `Test`
+3. Run test
+
+```shell
+go test
+
+or 
+
+go test -v
 ```
