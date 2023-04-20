@@ -27,3 +27,12 @@ go run .
 ```shell
 go mod tidy
 ```
+
+### Make module look to local module
+
+```shell
+go mod edit -replace {location}/{moduleName}={fisicalLocation}
+
+ex:
+go mod edit -replace example.com/greetings=../greetings
+```
