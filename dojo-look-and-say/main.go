@@ -44,7 +44,7 @@ func formatRepeatedValues(slicedNumbers []string) string {
 	for i, slicedNumber := range slicedNumbers {
 		nextIndex := i + 1
 		if nextIndex >= len(slicedNumbers) {
-			finalValue = fmt.Sprint(finalValue, counter, slicedNumber)
+			finalValue += fmt.Sprint(counter, slicedNumber)
 			break
 		}
 
@@ -52,7 +52,7 @@ func formatRepeatedValues(slicedNumbers []string) string {
 		if slicedNumber == nextValue {
 			counter++
 		} else {
-			finalValue = fmt.Sprint(finalValue, counter, slicedNumber)
+			finalValue += fmt.Sprint(counter, slicedNumber)
 			counter = 1
 		}
 	}
