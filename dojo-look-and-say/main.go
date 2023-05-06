@@ -3,9 +3,20 @@ package main
 import (
 	"errors"
 	"fmt"
+	"log"
 	"strconv"
 	"strings"
 )
+
+func main() {
+	value, err := LookAndSay(226666655531111)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println(value)
+}
 
 func LookAndSay(number int) (int, error) {
 	numberAsString := strconv.Itoa(number)
